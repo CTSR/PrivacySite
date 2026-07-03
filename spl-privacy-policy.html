@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPL Meter 隱私權政策 | Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1c2430;
+    --paper: #fafbfc;
+    --card: #ffffff;
+    --accent: #0e7d6e;
+    --accent-soft: #e3f2ef;
+    --muted: #5d6b7a;
+    --line: #e3e8ee;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.75;
+  }
+  header {
+    background: linear-gradient(135deg, #10332e 0%, #0e7d6e 100%);
+    color: #fff;
+    padding: 56px 24px 48px;
+    text-align: center;
+  }
+  .app-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .app-badge svg { width: 18px; height: 18px; }
+  header h1 { font-size: 30px; font-weight: 700; letter-spacing: 0.5px; }
+  header p { margin-top: 8px; opacity: 0.85; font-size: 15px; }
+
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 26px;
+  }
+  .lang-switch button {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-switch button.active {
+    background: #fff;
+    color: var(--accent);
+    font-weight: 600;
+    border-color: #fff;
+  }
+  .lang-switch button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: -24px auto 60px;
+    padding: 0 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 40px 36px;
+    box-shadow: 0 8px 28px rgba(16, 51, 46, 0.07);
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  .highlight {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 18px 20px;
+    margin-bottom: 32px;
+    font-size: 15.5px;
+  }
+  h2 {
+    font-size: 19px;
+    color: var(--accent);
+    margin: 32px 0 10px;
+    padding-top: 8px;
+  }
+  section:first-of-type h2 { margin-top: 0; }
+  p, li { font-size: 15.5px; color: #2a3542; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  li::marker { color: var(--accent); }
+  .no-list li { list-style: none; position: relative; padding-left: 28px; }
+  .no-list li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  a { color: var(--accent); }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    padding: 0 20px 48px;
+  }
+  [hidden] { display: none !important; }
+  @media (max-width: 520px) {
+    .card { padding: 30px 22px; }
+    header h1 { font-size: 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M3 12h2l2-7 3 14 3-10 2 5 2-2h4"/>
+    </svg>
+    SPL METER
+  </div>
+  <h1 id="title-zh">隱私權政策</h1>
+  <h1 id="title-en" hidden>Privacy Policy</h1>
+  <p id="sub-zh">您的隱私，我們完全不碰。</p>
+  <p id="sub-en" hidden>Your privacy stays entirely with you.</p>
+  <div class="lang-switch" role="group" aria-label="Language switch">
+    <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<main>
+  <!-- ===================== 中文版 ===================== -->
+  <div class="card" id="content-zh">
+    <p class="updated">最後更新日期:2026 年 7 月 3 日</p>
+
+    <div class="highlight">
+      <strong>一句話總結:</strong>SPL Meter 是一款完全免費、完全離線的分貝計 App。我們不收集、不儲存、不上傳、不分享您的任何資料。
+    </div>
+
+    <section>
+      <h2>1. 概述</h2>
+      <p>SPL Meter(以下稱「本應用程式」)是一款利用裝置麥克風即時量測環境音量(聲壓級)的工具。本隱私權政策說明本應用程式如何處理您的資訊——簡單來說,就是「完全不處理」。</p>
+    </section>
+
+    <section>
+      <h2>2. 我們不收集任何資料</h2>
+      <p>本應用程式:</p>
+      <ul class="no-list">
+        <li>不需要網路連線,亦不進行任何網路傳輸</li>
+        <li>不使用 Firebase 或任何第三方分析、追蹤服務</li>
+        <li>不顯示任何廣告,也不含廣告 SDK</li>
+        <li>不需要註冊或登入任何帳號</li>
+        <li>不收集、不上傳任何個人資料或使用資料</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 麥克風權限</h2>
+      <p>本應用程式需要「麥克風」權限,僅用於在您的裝置上即時計算環境音量數值(分貝)。所有音訊處理皆在裝置本機即時完成:</p>
+      <ul>
+        <li>聲音不會被錄製或儲存為音訊檔案</li>
+        <li>聲音不會離開您的裝置,更不會上傳至任何伺服器</li>
+        <li>關閉應用程式後,麥克風即停止使用</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 資料儲存</h2>
+      <p>若本應用程式提供量測紀錄或設定儲存功能,相關資料僅儲存於您裝置的本機儲存空間,您可隨時自行刪除。開發者無法存取這些資料。</p>
+    </section>
+
+    <section>
+      <h2>5. 兒童隱私</h2>
+      <p>由於本應用程式不收集任何資料,因此不會收集任何兒童的個人資訊,適合所有年齡層使用。</p>
+    </section>
+
+    <section>
+      <h2>6. 政策變更</h2>
+      <p>若本隱私權政策有任何變更,我們將於本頁面更新內容並修改「最後更新日期」。</p>
+    </section>
+
+    <section>
+      <h2>7. 聯絡我們</h2>
+      <p>若您對本隱私權政策有任何疑問,歡迎來信:<a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+  </div>
+
+  <!-- ===================== English ===================== -->
+  <div class="card" id="content-en" hidden>
+    <p class="updated">Last updated: July 3, 2026</p>
+
+    <div class="highlight">
+      <strong>In one sentence:</strong> SPL Meter is a completely free, fully offline decibel meter app. We do not collect, store, upload, or share any of your data.
+    </div>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>SPL Meter (the "App") is a tool that uses your device's microphone to measure ambient sound levels (sound pressure level) in real time. This Privacy Policy explains how the App handles your information — in short, it doesn't.</p>
+    </section>
+
+    <section>
+      <h2>2. We Collect No Data</h2>
+      <p>The App:</p>
+      <ul class="no-list">
+        <li>Requires no internet connection and performs no network transmission</li>
+        <li>Does not use Firebase or any third-party analytics or tracking services</li>
+        <li>Contains no advertisements and no ad SDKs</li>
+        <li>Requires no account registration or sign-in</li>
+        <li>Collects and uploads no personal data or usage data of any kind</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Microphone Permission</h2>
+      <p>The App requests the Microphone permission solely to calculate ambient sound levels (decibels) in real time on your device. All audio processing happens locally and instantly:</p>
+      <ul>
+        <li>Sound is never recorded or saved as audio files</li>
+        <li>Sound never leaves your device and is never uploaded to any server</li>
+        <li>The microphone stops being used when you close the App</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Data Storage</h2>
+      <p>If the App offers features such as measurement history or saved settings, that data is stored only in your device's local storage and can be deleted by you at any time. The developer has no access to this data.</p>
+    </section>
+
+    <section>
+      <h2>5. Children's Privacy</h2>
+      <p>Because the App collects no data whatsoever, it does not collect personal information from children and is suitable for users of all ages.</p>
+    </section>
+
+    <section>
+      <h2>6. Changes to This Policy</h2>
+      <p>If this Privacy Policy changes, we will update this page and revise the "Last updated" date above.</p>
+    </section>
+
+    <section>
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <span id="footer-zh">© 2026 SPL Meter。本應用程式不收集任何資料。</span>
+  <span id="footer-en" hidden>© 2026 SPL Meter. This app collects no data.</span>
+</footer>
+
+<script>
+function setLang(lang) {
+  const zh = lang === 'zh';
+  document.documentElement.lang = zh ? 'zh-Hant' : 'en';
+  ['title', 'sub', 'content', 'footer'].forEach(id => {
+    document.getElementById(id + '-zh').hidden = !zh;
+    document.getElementById(id + '-en').hidden = zh;
+  });
+  document.getElementById('btn-zh').classList.toggle('active', zh);
+  document.getElementById('btn-en').classList.toggle('active', !zh);
+}
+</script>
+
+</body>
+</html>

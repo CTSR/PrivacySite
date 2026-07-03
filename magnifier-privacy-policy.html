@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magnifier — 隱私權政策 / Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FCFBF7;
+    --ink:#1C1B19;
+    --muted:#6E6A61;
+    --brass:#B0863C;
+    --brass-deep:#8A6829;
+    --lens-tint:rgba(176,134,60,0.08);
+    --hair:#E7E3D8;
+    --card:#FFFFFF;
+    --display:"Fraunces",Georgia,"Songti TC","Noto Serif TC",serif;
+    --body:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei","Noto Sans TC",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.7;
+    font-size:17px;
+    letter-spacing:.005em;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  /* language switch */
+  .lang-en{display:none;}
+  body.show-en .lang-zh{display:none;}
+  body.show-en .lang-en{display:block;}
+  span.lang-en{display:none;}
+  body.show-en span.lang-zh{display:none;}
+  body.show-en span.lang-en{display:inline;}
+
+  .topbar{
+    display:flex;justify-content:flex-end;align-items:center;
+    padding:20px 24px;max-width:760px;margin:0 auto;
+  }
+  .toggle{
+    display:inline-flex;border:1px solid var(--hair);border-radius:999px;
+    overflow:hidden;background:var(--card);
+  }
+  .toggle button{
+    font-family:var(--body);font-size:14px;font-weight:500;
+    padding:7px 16px;border:0;background:transparent;color:var(--muted);
+    cursor:pointer;letter-spacing:.02em;transition:color .2s,background .2s;
+  }
+  .toggle button.active{background:var(--ink);color:var(--paper);}
+  .toggle button:focus-visible{outline:2px solid var(--brass);outline-offset:2px;}
+
+  /* hero */
+  header.hero{padding:28px 0 44px;text-align:center;}
+  .lens{
+    width:96px;height:96px;margin:0 auto 26px;position:relative;
+  }
+  .lens svg{width:100%;height:100%;display:block;}
+  .lens .glass{fill:var(--lens-tint);}
+  .lens .rim{fill:none;stroke:var(--brass);stroke-width:5;}
+  .lens .handle{fill:none;stroke:var(--brass);stroke-width:6;stroke-linecap:round;}
+  .lens .glint{fill:none;stroke:var(--brass);stroke-width:3;stroke-linecap:round;opacity:.55;}
+
+  h1{
+    font-family:var(--display);
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(46px,9vw,72px);
+    line-height:1.02;
+    margin:0 0 14px;
+    letter-spacing:-.01em;
+  }
+  .kicker{
+    font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--brass-deep);font-weight:600;margin-bottom:4px;
+  }
+  .sub{color:var(--muted);font-size:16px;margin:0 auto;max-width:34em;}
+  .meta{margin-top:22px;font-size:13.5px;color:var(--muted);}
+  .meta b{color:var(--ink);font-weight:500;}
+
+  hr.rule{border:0;border-top:1px solid var(--hair);margin:0;}
+
+  /* promises */
+  section{padding:52px 0;}
+  .eyebrow{
+    font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--brass-deep);font-weight:600;margin:0 0 8px;
+  }
+  h2{
+    font-family:var(--display);font-weight:500;
+    font-size:clamp(26px,4.5vw,34px);line-height:1.12;
+    margin:0 0 22px;letter-spacing:-.005em;
+  }
+  h2 .lead{color:var(--muted);}
+
+  .promises{list-style:none;padding:0;margin:0;display:grid;gap:14px;}
+  .promise{
+    display:flex;gap:16px;align-items:flex-start;
+    background:var(--card);border:1px solid var(--hair);
+    border-radius:14px;padding:18px 20px;
+  }
+  .promise .mark{
+    flex:0 0 auto;width:34px;height:34px;border-radius:50%;
+    border:2px solid var(--brass);position:relative;margin-top:1px;
+    display:grid;place-items:center;background:var(--lens-tint);
+  }
+  .promise .mark svg{width:16px;height:16px;stroke:var(--brass-deep);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+  .promise .txt{flex:1;}
+  .promise .t{font-weight:600;font-size:16.5px;margin:0 0 2px;}
+  .promise .d{margin:0;font-size:14.5px;color:var(--muted);line-height:1.6;}
+
+  /* prose blocks */
+  .prose p{margin:0 0 16px;}
+  .prose p:last-child{margin-bottom:0;}
+  .prose strong{font-weight:600;}
+  .callout{
+    background:var(--lens-tint);border:1px solid var(--hair);
+    border-radius:14px;padding:20px 22px;
+  }
+  .callout .prose p{color:var(--ink);}
+
+  a{color:var(--brass-deep);text-decoration:underline;text-underline-offset:3px;}
+  a:hover{color:var(--ink);}
+
+  footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-size:13.5px;}
+  footer .name{font-family:var(--display);color:var(--ink);font-size:17px;}
+
+  @media (max-width:520px){
+    body{font-size:16px;}
+    .wrap{padding:0 18px;}
+    .promise{padding:16px;}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .lens{animation:float 6s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  }
+</style>
+</head>
+<body class="show-zh">
+
+  <div class="topbar">
+    <div class="toggle" role="group" aria-label="Language / 語言">
+      <button id="btn-zh" class="active" onclick="setLang('zh')" aria-pressed="true">中文</button>
+      <button id="btn-en" onclick="setLang('en')" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="lens" aria-hidden="true">
+        <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+          <circle class="glass" cx="40" cy="40" r="28"/>
+          <circle class="rim" cx="40" cy="40" r="28"/>
+          <path class="handle" d="M60 60 L84 84"/>
+          <path class="glint" d="M30 32 A16 16 0 0 1 44 26"/>
+        </svg>
+      </div>
+
+      <p class="kicker">
+        <span class="lang-zh">隱私權政策</span>
+        <span class="lang-en">Privacy Policy</span>
+      </p>
+      <h1>Magnifier</h1>
+
+      <p class="sub">
+        <span class="lang-zh">Magnifier 是一款單純的放大鏡工具。它完全在您的裝置上運作，不會蒐集、儲存或傳送任何個人資料。</span>
+        <span class="lang-en">Magnifier is a simple magnifier tool. It runs entirely on your device and does not collect, store, or transmit any personal data.</span>
+      </p>
+
+      <p class="meta">
+        <span class="lang-zh"><b>生效日期：</b>2026 年 7 月 3 日</span>
+        <span class="lang-en"><b>Effective date:</b> July 3, 2026</span>
+      </p>
+    </header>
+
+    <hr class="rule">
+
+    <!-- Promises -->
+    <section>
+      <p class="eyebrow">
+        <span class="lang-zh">我們的承諾</span>
+        <span class="lang-en">Our promises</span>
+      </p>
+      <h2>
+        <span class="lang-zh">看得更清楚，<span class="lead">卻對您一無所知。</span></span>
+        <span class="lang-en">Made to see clearly, <span class="lead">yet it knows nothing about you.</span></span>
+      </h2>
+
+      <ul class="promises">
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">完全免費</span><span class="lang-en">Completely free</span></p>
+            <p class="d"><span class="lang-zh">本 App 免費提供，沒有任何內購或訂閱。</span><span class="lang-en">The app is free to use, with no in-app purchases or subscriptions.</span></p>
+          </div>
+        </li>
+
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">不使用網路</span><span class="lang-en">No internet access</span></p>
+            <p class="d"><span class="lang-zh">App 不會連線至網際網路，所有功能皆在裝置本機完成。</span><span class="lang-en">The app never connects to the internet. Everything happens locally on your device.</span></p>
+          </div>
+        </li>
+
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">不使用 Firebase 或分析工具</span><span class="lang-en">No Firebase or analytics</span></p>
+            <p class="d"><span class="lang-zh">未整合 Firebase 或任何第三方分析、追蹤 SDK。</span><span class="lang-en">No Firebase and no third-party analytics or tracking SDKs are included.</span></p>
+          </div>
+        </li>
+
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">沒有廣告</span><span class="lang-en">No ads</span></p>
+            <p class="d"><span class="lang-zh">App 內不顯示任何廣告，也不使用廣告網路。</span><span class="lang-en">The app shows no advertising and uses no ad networks.</span></p>
+          </div>
+        </li>
+
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">無需登入帳號</span><span class="lang-en">No account required</span></p>
+            <p class="d"><span class="lang-zh">您不需要註冊或登入任何帳號即可使用全部功能。</span><span class="lang-en">You can use every feature without signing up or logging in.</span></p>
+          </div>
+        </li>
+
+        <li class="promise">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-11"/></svg></span>
+          <div class="txt">
+            <p class="t"><span class="lang-zh">不上傳任何資料</span><span class="lang-en">Nothing is uploaded</span></p>
+            <p class="d"><span class="lang-zh">App 不會上傳、備份或分享您的任何資料或影像。</span><span class="lang-en">The app does not upload, back up, or share any of your data or images.</span></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Data collection -->
+    <section class="prose">
+      <p class="eyebrow"><span class="lang-zh">我們蒐集的資料</span><span class="lang-en">Data we collect</span></p>
+      <h2><span class="lang-zh">沒有。</span><span class="lang-en">None.</span></h2>
+      <p>
+        <span class="lang-zh">Magnifier 不會蒐集個人資訊，例如姓名、電子郵件、地址、聯絡人或位置資料。App 沒有帳號系統，也不會建立任何使用者識別碼。因為 App 不使用網路，您的任何資訊都無法離開您的裝置。</span>
+        <span class="lang-en">Magnifier does not collect personal information such as your name, email, address, contacts, or location. There is no account system and no user identifier is created. Because the app has no internet access, none of your information can ever leave your device.</span>
+      </p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Camera permission -->
+    <section class="prose">
+      <p class="eyebrow"><span class="lang-zh">相機權限</span><span class="lang-en">Camera permission</span></p>
+      <h2><span class="lang-zh">相機僅供放大顯示</span><span class="lang-en">The camera is only for magnifying</span></h2>
+      <div class="callout">
+        <div class="prose">
+          <p>
+            <span class="lang-zh">為了作為放大鏡，App 需要存取您的相機以即時顯示放大後的影像。相機畫面只會即時顯示在螢幕上，<strong>不會被儲存、記錄或傳送到任何地方</strong>。除非您主動使用系統的螢幕截圖或拍照功能來保存畫面，否則 App 不會留存任何影像。您可以隨時在系統「設定」中撤銷相機權限。</span>
+            <span class="lang-en">To work as a magnifier, the app needs access to your camera to show a live, enlarged image. The camera feed is displayed on screen in real time and is <strong>never saved, recorded, or sent anywhere</strong>. The app keeps no images unless you choose to save one yourself using your device's own screenshot or photo feature. You can revoke camera access at any time in your system Settings.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Children -->
+    <section class="prose">
+      <p class="eyebrow"><span class="lang-zh">兒童隱私</span><span class="lang-en">Children's privacy</span></p>
+      <h2><span class="lang-zh">適合所有年齡</span><span class="lang-en">Safe for all ages</span></h2>
+      <p>
+        <span class="lang-zh">由於 Magnifier 不蒐集任何個人資料，也不使用網路，因此適合所有年齡層的使用者，包括兒童。我們不會在知情的情況下向任何人索取或蒐集個人資訊。</span>
+        <span class="lang-en">Because Magnifier collects no personal data and uses no internet connection, it is suitable for users of all ages, including children. We do not knowingly request or collect personal information from anyone.</span>
+      </p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Changes -->
+    <section class="prose">
+      <p class="eyebrow"><span class="lang-zh">政策異動</span><span class="lang-en">Changes to this policy</span></p>
+      <h2><span class="lang-zh">若有更新，將於此頁公告</span><span class="lang-en">Updates are posted here</span></h2>
+      <p>
+        <span class="lang-zh">若本隱私權政策有任何更新，我們會在本頁面公布修訂後的版本，並更新上方的生效日期。建議您不定期回訪本頁以了解最新內容。</span>
+        <span class="lang-en">If this Privacy Policy changes, we will post the revised version on this page and update the effective date shown above. We encourage you to review this page from time to time.</span>
+      </p>
+    </section>
+
+    <hr class="rule">
+
+    <!-- Contact -->
+    <section class="prose">
+      <p class="eyebrow"><span class="lang-zh">聯絡我們</span><span class="lang-en">Contact us</span></p>
+      <h2><span class="lang-zh">有任何問題嗎？</span><span class="lang-en">Questions?</span></h2>
+      <p>
+        <span class="lang-zh">如果您對本隱私權政策有任何疑問，歡迎來信：<a href="mailto:your-email@example.com">your-email@example.com</a></span>
+        <span class="lang-en">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:your-email@example.com">your-email@example.com</a></span>
+      </p>
+    </section>
+  </div>
+
+  <hr class="rule">
+  <footer>
+    <div class="name">Magnifier</div>
+    <p>
+      <span class="lang-zh">© 2026 Magnifier．保留一切權利。</span>
+      <span class="lang-en">© 2026 Magnifier. All rights reserved.</span>
+    </p>
+  </footer>
+
+<script>
+  function setLang(lang){
+    var body=document.body;
+    var zh=document.getElementById('btn-zh');
+    var en=document.getElementById('btn-en');
+    if(lang==='en'){
+      body.classList.remove('show-zh');body.classList.add('show-en');
+      document.documentElement.lang='en';
+      en.classList.add('active');zh.classList.remove('active');
+      en.setAttribute('aria-pressed','true');zh.setAttribute('aria-pressed','false');
+    }else{
+      body.classList.remove('show-en');body.classList.add('show-zh');
+      document.documentElement.lang='zh-Hant';
+      zh.classList.add('active');en.classList.remove('active');
+      zh.setAttribute('aria-pressed','true');en.setAttribute('aria-pressed','false');
+    }
+  }
+</script>
+</body>
+</html>
